@@ -38,7 +38,10 @@ function getSpeedMult(zone = curTown) {
     
     //Imbue Soul
     speedMult += 0.5 * getBuffLevel("Imbuement3");
-
+	
+    //lazy
+    speedMult *= 100;
+	
     return speedMult;
 }
 
