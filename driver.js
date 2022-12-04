@@ -41,6 +41,7 @@ function getSpeedMult(zone = curTown) {
 	
     //lazy
     speedMult *= 100;
+    speedMult *= (1 + 0.2 * getLevel('Spd') + 0.04 * getTalent('Spd'))
 	
     return speedMult;
 }
